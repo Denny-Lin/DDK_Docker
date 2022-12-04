@@ -84,7 +84,7 @@ docker run -it --name=DDK_name --hostname=DDK_hostname -v /tmp/:/tmp/ ubuntu:18.
 ### "start + exec" vs "run -it"
 Let us start and execute it again. </br>
 ```sh
-start 2e9
+docker start 2e9
 ```
 ![image](https://user-images.githubusercontent.com/67073582/205504068-4a30bf84-330b-49a9-89e2-8ad61a6227bc.png)
 ![image](https://user-images.githubusercontent.com/67073582/205504091-266c29c1-e9e9-4d2a-b5d9-5002742456c1.png)
