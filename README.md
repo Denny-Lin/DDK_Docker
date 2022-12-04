@@ -59,7 +59,7 @@ sudo docker ps -a
 ```
 ![image](https://user-images.githubusercontent.com/67073582/205502110-6fd14c65-1a6e-4e4a-9b10-8ce70e3ff39d.png)
 
-### Download image of Ubuntu 18.04
+### Download image of Ubuntu 18.04 manually
 ```sh
 docker search ubuntu
 docker pull ubuntu:18.04
@@ -82,6 +82,9 @@ docker run -it --name=DDK_name --hostname=DDK_hostname -v /tmp/:/tmp/ ubuntu:18.
 ![image](https://user-images.githubusercontent.com/67073582/205503517-23f5217e-6023-43b2-81ab-bd96408accb6.png)
 
 ### Let us start and run it again
+```sh
+start 2e9
+```
 ![image](https://user-images.githubusercontent.com/67073582/205504068-4a30bf84-330b-49a9-89e2-8ad61a6227bc.png)
 ![image](https://user-images.githubusercontent.com/67073582/205504091-266c29c1-e9e9-4d2a-b5d9-5002742456c1.png)
 ```sh
