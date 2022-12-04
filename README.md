@@ -78,6 +78,7 @@ docker run -it --name=DDK_name --hostname=DDK_hostname -v /tmp/:/tmp/ ubuntu:18.
 ### Leave container of Ubuntu 18.04
 ![image](https://user-images.githubusercontent.com/67073582/205503125-db3e12b3-697c-48b2-80d8-cafde541b046.png)
 
+![image](https://user-images.githubusercontent.com/67073582/205503517-23f5217e-6023-43b2-81ab-bd96408accb6.png)
 
 # References
 1. https://docs.docker.com/engine/install/ubuntu/
