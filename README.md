@@ -91,6 +91,7 @@ docker start 2e9
 ```sh
 docker exec -it DDK_name /bin/bash
 ```
+![image](https://user-images.githubusercontent.com/67073582/205505829-f56ccb72-bca0-45ae-a6c0-23d2b503bdd7.png)
 
 # References
 1. https://docs.docker.com/engine/install/ubuntu/
