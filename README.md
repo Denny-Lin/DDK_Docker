@@ -58,7 +58,7 @@ sudo docker ps -a
 ```
 ![image](https://user-images.githubusercontent.com/67073582/205502110-6fd14c65-1a6e-4e4a-9b10-8ce70e3ff39d.png)
 
-### Download container of Ubuntu 18.04
+### Download image of Ubuntu 18.04
 ```sh
 docker search ubuntu
 docker pull ubuntu:18.04
