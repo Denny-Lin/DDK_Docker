@@ -52,7 +52,7 @@ sudo docker run hello-world
 ```
 ![image](https://user-images.githubusercontent.com/67073582/205501874-e50a9046-5bd1-40b2-835b-fa0b7685aaef.png) </br>
 Then we know, "run" includes download if we do not have that image.</br>
-We alos observe "image:version" that we will use later. </br>
+We also observe "image:version" that we will use later. </br>
 
 ```sh
 sudo docker ps -a
