@@ -96,4 +96,3 @@ docker exec -it DDK_name /bin/bash
 # References
 1. https://docs.docker.com/engine/install/ubuntu/
 2. https://hub.docker.com/_/ubuntu
-3. ...
