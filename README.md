@@ -1,13 +1,25 @@
 # DDK_Docker
 To introduce how to setup Ubuntu xx.04 by docker on localhost.
 
+# Environments
+```sh
+cat /etc/lsb-release
+
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.3 LTS"
+```
+
 # Why do we use docker?
 ... </br>
 
 # Let us get started
-The subsequent commnads are from "https://docs.docker.com/engine/install/ubuntu/"; thus, for more detail, please refer to the website.</br>
+The subsequent commnads are from "https://docs.docker.com/engine/install/ubuntu/"; thus, for more details, please refer to the website.</br>
 ### Set up the repository
 ```sh
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
 sudo apt-get update
 sudo apt-get install \
     ca-certificates \
@@ -28,15 +40,44 @@ echo \
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
+```sh
+docker --version
+
+Docker version 20.10.21, build baeda1f
+```
+
 ### Check if installed successfully
 ```sh
 sudo docker run hello-world
 ```
+![image](https://user-images.githubusercontent.com/67073582/205501874-e50a9046-5bd1-40b2-835b-fa0b7685aaef.png)
+
+
+```sh
+sudo docker ps -a
+```
+![image](https://user-images.githubusercontent.com/67073582/205502110-6fd14c65-1a6e-4e4a-9b10-8ce70e3ff39d.png)
 
 ### Download container of Ubuntu 18.04
 ```sh
-...
+docker search ubuntu
+docker pull ubuntu:18.04
 ```
+![image](https://user-images.githubusercontent.com/67073582/205502625-3a1af668-c7c4-4943-83eb-1061c969b1d8.png)
+```sh
+docker images
+```
+![image](https://user-images.githubusercontent.com/67073582/205502679-0563f55a-a377-4bab-b105-04d9b1539373.png)
+
+### Run container of Ubuntu 18.04
+```sh
+docker run -it --name=DDK_name --hostname=DDK_hostname -v /tmp/:/tmp/ ubuntu:18.04 /bin/bash
+```
+![image](https://user-images.githubusercontent.com/67073582/205502986-87337433-2c05-4c11-9264-0951eb570614.png)
+
+### Leave container of Ubuntu 18.04
+![image](https://user-images.githubusercontent.com/67073582/205503125-db3e12b3-697c-48b2-80d8-cafde541b046.png)
+
 
 # References
 1. https://docs.docker.com/engine/install/ubuntu/
