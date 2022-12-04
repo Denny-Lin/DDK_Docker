@@ -50,8 +50,8 @@ Docker version 20.10.21, build baeda1f
 ```sh
 sudo docker run hello-world
 ```
-![image](https://user-images.githubusercontent.com/67073582/205501874-e50a9046-5bd1-40b2-835b-fa0b7685aaef.png)
-
+![image](https://user-images.githubusercontent.com/67073582/205501874-e50a9046-5bd1-40b2-835b-fa0b7685aaef.png) </br>
+Then we know, "run" includes download if we do not have that image.</br>
 
 ```sh
 sudo docker ps -a
