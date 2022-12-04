@@ -80,6 +80,13 @@ docker run -it --name=DDK_name --hostname=DDK_hostname -v /tmp/:/tmp/ ubuntu:18.
 
 ![image](https://user-images.githubusercontent.com/67073582/205503517-23f5217e-6023-43b2-81ab-bd96408accb6.png)
 
+### Let us start and run it again
+![image](https://user-images.githubusercontent.com/67073582/205504068-4a30bf84-330b-49a9-89e2-8ad61a6227bc.png)
+![image](https://user-images.githubusercontent.com/67073582/205504091-266c29c1-e9e9-4d2a-b5d9-5002742456c1.png)
+```sh
+docker exec -it DDK_name /bin/bash
+```
+
 # References
 1. https://docs.docker.com/engine/install/ubuntu/
 2. https://hub.docker.com/_/ubuntu
